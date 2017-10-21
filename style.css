@@ -4,11 +4,13 @@
     box-sizing: border-box;
 }
 
+/*
 .clear-fix:after {
     content: "";
     display: table;
     clear: both;
 }
+*/
 
 body {
     font-family: Helvetica Neue, Arial;
@@ -44,17 +46,6 @@ h2 {
     margin: 20px auto 0 auto;
 }
 
-.blog-post {
-    width: 75%;
-    float: left;
-    padding-right: 30px;
-}
-
-.other-posts {
-    width: 25%;
-    float: left;
-}
-
 .author-box {
     border-top: 1px solid #908b8b;
     padding-top: 10px;
@@ -69,9 +60,4 @@ h2 {
     width: 100px;
     border-radius: 70%;
     float: left;
-}
-
-.blog-post img {
-    height: 150px;
-    width: auto;
 }
