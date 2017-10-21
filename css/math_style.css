@@ -90,6 +90,14 @@ h4:first-child						{ margin-top: 0; }
 optgroup {
 	font-weight:normal;
 }
+h1 {
+    font-size: 50px;
+    font-weight: 100;
+}
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
 
 abbr,acronym {
 	/* Indicating to users that more info is available. */
@@ -190,14 +198,12 @@ body {
 	color: #333;
     font-family: Open Sans;
 	/*font-family: Arial, Helvetica, sans-serif;*/
-	background-image: url(../images/red_bg.png);
+	/*background-image: url(../images/red_bg.png);*/
 	background-repeat: repeat-x;	/*background-color: #fff;*/
-	
-	
 }
 
 body a{
-	color: #C00;
+	color: #e67e22;
 	font-weight:bold;
 	text-decoration:none;
 }
@@ -214,7 +220,6 @@ a[href$=".pdf"] {
 
 /*=================== 003 LAYOUT ======================= */
 #wrapper {
-
 	margin-top:5px;
 	margin-bottom:15px;
 	margin-left: auto;
@@ -222,17 +227,16 @@ a[href$=".pdf"] {
 	width: 960px;
 }
 
-
 /* logo */
 #wrapper_1 {
-  width: 960px;
-  height: 110px;
+  width: 853px;
+  height: 90px;
 }
 
 /* menu */
 #wrapper_2 {
-  width: 960px;
-  height: 38px;
+  width: 853px;
+  height: 75px;
   background-image: url(../images/menu_bg.png);
   background-repeat:repeat-x;
 }
@@ -258,13 +262,12 @@ a[href$=".pdf"] {
   
 }
 
-
 /* content */
 #wrapper_5 {
 	min-height: 630px;
   margin-top: 30px;
-  width: 930px;
-  border: 2px solid #cc0000;
+  width: 818px;
+  border: 2px solid #e67e22;
   -moz-border-radius: 5px;
   border-radius: 5px;
   padding: 15px;
@@ -273,13 +276,30 @@ a[href$=".pdf"] {
 	box-shadow: 0 0 5px 1px #888;
 }
 
+/* Header */
+#wrapper_header{
+	top:0; /* stick to top */
+	margin-bottom: 50px;
+	width:100%;
+    height:50px;
+	clear:both;
+  background-color:#e67e22;
+
+}
+#headercontainer {
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	height: 50px;
+	}
 /* Footer */
 #wrapper_footer{
 	bottom:0; /* stick to bottom */
 	margin-top: 30px;
 	width:100%;
 	clear:both;
-  background-color:#CC0000;
+  background-color:#e67e22;
 
 }
 #wrapper_footer{border-top:1px solid #999;}
@@ -350,8 +370,6 @@ a[href$=".pdf"] {
 	background-image: url(../images/menu_hover_bg.png);
 }
 #wrapper_2 a:current {background-color: #fff; border-bottom: none;}
-
-
 
 .clear {
   clear: both;
