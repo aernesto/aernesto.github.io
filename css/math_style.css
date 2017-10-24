@@ -250,15 +250,16 @@ a[href$=".pdf"] {
 #wrapper_1 #left_logo{
   float: left;
   width: 400px;
-  height: 80px;
+  margin-top: 11px; 
+  /*height: 80px;*/
 }
 
 #wrapper_1 #right_uhlink{
   margin-top:0px;
   float: right;
   width: 500px;
-  height: 80px;
-  padding: 5px;
+  /*height: 80px;*/
+  /*padding: 5px;*/
   
 }
 
@@ -287,11 +288,11 @@ a[href$=".pdf"] {
 
 }
 #headercontainer {
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 960px;
-	height: 50px;
+	/*height: 50px;*/
 	}
 /* Footer */
 #wrapper_footer{
