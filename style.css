@@ -204,7 +204,7 @@ body {
 
 body a{
 	color: #e67e22;
-	font-weight:bold;
+	font-weight:normal;
 	text-decoration:none;
 }
 body a:hover{
@@ -237,7 +237,7 @@ a[href$=".pdf"] {
 #wrapper_2 {
   width: 853px;
   height: 75px;
-  background-image: url(../images/menu_bg.png);
+  background-image: url(menu_bg.png);
   background-repeat:repeat-x;
 }
 
@@ -361,14 +361,14 @@ a[href$=".pdf"] {
 	color: #FFF;
 	text-decoration: none;
 	font-weight:bold;
-	background-image: url(../images/menu_bg.png);
+	background-image: url(menu_bg.png);
 	border-left: 1px solid #ccc;
 }
 
 #wrapper_2 li a:hover {
 	color: #fff;
 	background-color: #333;
-	background-image: url(../images/menu_hover_bg.png);
+	background-image: url(menu_hover_bg.png);
 }
 #wrapper_2 a:current {background-color: #fff; border-bottom: none;}
 
