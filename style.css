@@ -1,63 +1,382 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@charset "utf-8";
+/* CSS Document */
+/**************** by TRUNG NGUYEN **************************/
+/**UNIVERSITY OF HOUSTON - DEPT OF MATHEMATICS WEBMASTER**********
+  ** 001 RESET
+  ** 002 RESTYLE
+  ** 003 PAGE LAYOUT
+/********************************************/
+
+/* =====================001   RESET ========================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+/*	font: inherit; 
+	vertical-align: baseline;*/
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
 
+fieldset,
+img {
+	border:0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+sup {
+	vertical-align: baseline;
+}
+
+sub {
+	vertical-align: baseline;
+}
+
+/* =========== OO2  BASE CSS STYLE: BRING BACK THE COMMON STYLE ================ */
+/******************** Baseline grid: 13/18px ********************/
+body								{ font-size: 75%; line-height: 1.5; /*12/18*/ }
+
+
+.title								{ font-size: 36px; top: 5px; }
+h1									{ font-size: 26px; top: 8px; }
+h2									{ font-size: 22px; top: 1px; }
+h3									{ font-size: 18px; top: 2px; }
+h4									{ font-size: 15px; top: 4px; }
+h5									{ font-size: 13px; top: 5px; }
+
+h1,h2,h3,h4,h5,h6,strong,dt {
+	/* Bringing boldness back to headers and the strong element. */
+	font-weight: bold;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child						{ margin-top: 0; }
+
+optgroup {
+	font-weight:normal;
+}
+h1 {
+    font-size: 50px;
+    font-weight: 100;
+}
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+abbr,acronym {
+	/* Indicating to users that more info is available. */
+	border-bottom: 1px dotted #000;
+	cursor: help;
+}
+
+em {
+	/* Bringing italics back to the em element. */
+	font-style: italic;
+}
+
+del {
+	/* Striking deleted phrases. */
+	text-decoration: line-through;
+}
+
+blockquote,ul,ol,dl {
+	/* Giving blockquotes and lists room to breath. */
+	margin: 1em;
+}
+
+ol,ul,dl {
+	/* Bringing lists on to the page with breathing room. */
+	margin-left: 2em;
+}
+
+ol {
+	/* Giving OL's LIs generated numbers. */
+	list-style: decimal outside;
+}
+
+ul {
+	/* Giving UL's LIs generated disc markers. */
+	list-style: disc outside;
+}
+
+dl dd {
+	/* Giving DD default indent. */
+	margin-left: 1em;
+}
+
+th,td {
+	/* Borders and padding to make the table readable. */
+	border: 1px solid #000;
+	padding: .5em;
+}
+
+th {
+	/* Distinguishing table headers from data cells. */
+	font-weight: bold;
+	text-align: center;
+}
+
+caption {
+	/* Coordinated margin to match cell's padding. */
+	margin-bottom: .5em;
+	/* Centered so it doesn't blend in to other content. */
+	text-align: center;
+}
+
+sup {
+	/* to preserve line-height and selector appearance */
+	vertical-align: super;
+}
+
+sub {
+	/* to preserve line-height and selector appearance */
+	vertical-align: sub;
+}
+
+p,
+fieldset,
+table,
+pre {
+	/* So things don't run into each other. */
+	margin-bottom: 1em;
+}
+/* Opera requires 1px of padding to render with contemporary native chrome */
+button,
+input[type="checkbox"],
+input[type="radio"],
+input[type="reset"],
+input[type="submit"] {
+	padding:1px;
+}
+
+/* make IE scale images properly */
+/* see http://code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+ img {
+    -ms-interpolation-mode:bicubic;
+}
+
+
+body {
+	font-size: 20px;
+	min-height: 100%;
+	color: #333;
+    font-family: Open Sans;
+	/*font-family: Arial, Helvetica, sans-serif;*/
+	/*background-image: url(../images/red_bg.png);*/
+	background-repeat: repeat-x;	/*background-color: #fff;*/
+}
+
+body a{
+	color: #e67e22;
+	font-weight:bold;
+	text-decoration:none;
+}
+body a:hover{
+	text-decoration:underline;
+}
 /*
-.clear-fix:after {
-    content: "";
-    display: table;
-    clear: both;
+a[href$=".pdf"] {
+    background: url("http://static.aiononline.com/includes/images/template-items/pdf_icon.png") no-repeat scroll 100% 0 transparent;
+    display: inline-block;
+    padding-right: 20px;
 }
 */
 
-body {
-    font-family: Helvetica Neue, Arial;
-    font-size: 18px;
+/*=================== 003 LAYOUT ======================= */
+#wrapper {
+	margin-top:5px;
+	margin-bottom:15px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
 }
 
-h1, h2 {
-    color: #005818;
+/* logo */
+#wrapper_1 {
+  width: 853px;
+  height: 90px;
 }
 
-h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
+/* menu */
+#wrapper_2 {
+  width: 853px;
+  height: 75px;
+  background-image: url(../images/menu_bg.png);
+  background-repeat:repeat-x;
 }
 
-h2 {
-    font-size: 25;
-    margin-bottom: 10px;
-}
-.main-text {
-    text-align: justify;
-    margin-bottom: 20px;
+/* Heading */
+#wrapper_3 {
+  width: 960px;
+  height: 70px;
 }
 
-.author-text {
-    font-size: 22px;
-    float: left;
-    margin-top: 32px;
-    margin-left: 10px;
-}
-.container {
-    width: 1140px;
-    margin: 20px auto 0 auto;
+#wrapper_1 #left_logo{
+  float: left;
+  width: 400px;
+  margin-top: 11px; 
+  /*height: 80px;*/
 }
 
-.author-box {
-    border-top: 1px solid #908b8b;
-    padding-top: 10px;
+#wrapper_1 #right_uhlink{
+  margin-top:0px;
+  float: right;
+  width: 500px;
+  /*height: 80px;*/
+  /*padding: 5px;*/
+  
 }
 
-.other {
-    margin-bottom: 40px;
+/* content */
+#wrapper_5 {
+	min-height: 630px;
+  margin-top: 30px;
+  width: 818px;
+  border: 2px solid #e67e22;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 15px;
+  	-moz-box-shadow: 0 0 5px 1px #888;
+	-webkit-box-shadow: 0 0 5px 1px#888;
+	box-shadow: 0 0 5px 1px #888;
 }
 
-.author-box img {
-    height: 100px;
-    width: 100px;
-    border-radius: 70%;
-    float: left;
+/* Header */
+#wrapper_header{
+	top:0; /* stick to top */
+	margin-bottom: 20px;
+	width:100%;
+    height:100px;
+	clear:both;
+  background-color:#e67e22;
+
+}
+#headercontainer {
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	/*height: 50px;*/
+	}
+/* Footer */
+#wrapper_footer{
+	bottom:0; /* stick to bottom */
+	margin-top: 30px;
+	width:100%;
+	clear:both;
+  background-color:#e67e22;
+
+}
+#wrapper_footer{border-top:1px solid #999;}
+#footercontainer {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	height: 50px;
+	}
+
+/* footer 2 -copy right */
+
+#wrapper_7 {
+	font-size: 14px;
+	color:#000;
+/*  margin-top:15px;
+  border: 1px solid white; */
+  padding:10px;
+  width: 940px;
+
+}
+
+#wrapper_7 a{
+  color:#000;
+}
+
+/* horizontal menu of wraper 2*/
+#wrapper_2 ul {
+	top:0;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	cursor: default;
+	width: auto;
+}
+
+#wrapper_2 li{	
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	position: relative;
+	/*text-align: left;*/
+	cursor: pointer;
+	/*width: 8em;*/
+	float: left;}
+#wrapper_2 {display:block; overflow:hidden;font-weight: bold;text-decoration:none; color: #FFF;}
+
+#wrapper_2 li a{
+	display: block;
+	cursor: pointer;
+	height: 27px;
+	background-color: #333;
+	padding: 9px 58px 0px 50px;
+	/*padding: 0.5em 0.75em;*/
+	color: #FFF;
+	text-decoration: none;
+	font-weight:bold;
+	background-image: url(../images/menu_bg.png);
+	border-left: 1px solid #ccc;
+}
+
+#wrapper_2 li a:hover {
+	color: #fff;
+	background-color: #333;
+	background-image: url(../images/menu_hover_bg.png);
+}
+#wrapper_2 a:current {background-color: #fff; border-bottom: none;}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }
