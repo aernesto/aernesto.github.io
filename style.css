@@ -71,7 +71,7 @@ body								{ font-size: 75%; line-height: 1.5; /*12/18*/ }
 
 
 .title								{ font-size: 36px; top: 5px; }
-h1									{ font-size: 26px; top: 8px; }
+h1									{ font-size: 24px; top: 8px; }
 h2									{ font-size: 22px; top: 1px; }
 h3									{ font-size: 18px; top: 2px; }
 h4									{ font-size: 15px; top: 4px; }
@@ -91,7 +91,7 @@ optgroup {
 	font-weight:normal;
 }
 h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 100;
 }
 h2 {
@@ -193,7 +193,7 @@ input[type="submit"] {
 
 
 body {
-	font-size: 20px;
+	font-size: 18px;
 	min-height: 100%;
 	color: #333;
     font-family: Open Sans;
