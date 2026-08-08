@@ -1,173 +1,173 @@
-<!DOCTYPE html>
-<html>
+<\!DOCTYPE html>
+    <html>
 
-<head>
-    <meta charSet="utf-8" data-next-head="" />
-    <meta name="viewport" content="width=device-width" data-next-head="" />
-    <title data-next-head="">Knowledge Management — Adrian Radillo</title>
-    <meta name="description" content="Knowledge Management, IndieK Software, and tools by Adrian Radillo"
-        data-next-head="" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&amp;family=Playfair+Display:wght@400;700&amp;display=swap"
-        rel="stylesheet" />
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <head>
+        <meta charSet="utf-8" data-next-head="" />
+        <meta name="viewport" content="width=device-width" data-next-head="" />
+        <title data-next-head="">Knowledge Management — Adrian Radillo</title>
+        <meta name="description" content="Knowledge Management, IndieK Software, and tools by Adrian Radillo"
+            data-next-head="" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&amp;family=Playfair+Display:wght@400;700&amp;display=swap"
+            rel="stylesheet" />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
 
-        body {
-            background: linear-gradient(135deg, #0a1428 0%, #1a2d4f 100%);
-            color: #dceeff;
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-        }
+            body {
+                background: linear-gradient(135deg, #1a0a2e 0%, #2d1a3d 100%);
+                color: #e8d5f2;
+                font-family: 'Inter', sans-serif;
+                line-height: 1.8;
+            }
 
-        .Home_surface__8x0t2 {
-            min-height: 100vh;
-            padding: 40px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+            .Home_surface__8x0t2 {
+                min-height: 100vh;
+                padding: 40px;
+                max-width: 900px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
 
-        .Home_hero__g_og0 {
-            padding: 40px 0;
-        }
+            .Home_hero__g_og0 {
+                padding: 40px 0;
+            }
 
-        .Home_brand__TgXYz {
-            display: flex;
-            gap: 20px;
-            align-items: flex-start;
-            margin-bottom: 40px;
-        }
+            .Home_h1__ljsaa {
+                font-family: 'Playfair Display', serif;
+                font-size: 48px;
+                font-weight: 700;
+                margin-bottom: 15px;
+                color: #f0e8ff;
+            }
 
-        .Home_logo__ZEOng {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #a78bfa 0%, #60a5fa 100%);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 800;
-            font-size: 24px;
-            flex-shrink: 0;
-        }
+            .Home_tagline__Jw01K {
+                font-size: 18px;
+                color: #c4a9ff;
+                font-weight: 300;
+                margin-bottom: 30px;
+            }
 
-        .Home_h1__ljsaa {
-            font-family: 'Playfair Display', serif;
-            font-size: 48px;
-            font-weight: 700;
-            margin-bottom: 8px;
-            color: #eaf6ff;
-        }
+            .content-section {
+                max-width: 65ch;
+                color: #dceeff;
+                opacity: 0.95;
+                line-height: 1.8;
+                margin-bottom: 30px;
+            }
 
-        .Home_tagline__Jw01K {
-            font-size: 18px;
-            color: #8ab4f8;
-            font-weight: 300;
-        }
+            .content-section p {
+                margin-bottom: 20px;
+            }
 
-        .Home_cards__6Q_LD {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
-            margin: 40px 0;
-        }
+            .content-section a {
+                color: #c4a9ff;
+                text-decoration: none;
+                transition: color 0.2s;
+            }
 
-        .Home_card__HIlp_ {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            padding: 24px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
+            .content-section a:hover {
+                color: #e8b4ff;
+            }
 
-        .Home_card__HIlp_:hover {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.2);
-            transform: translateY(-2px);
-        }
+            .cta-button {
+                display: inline-block;
+                background: linear-gradient(135deg, #e8b4ff 0%, #d480ff 100%);
+                color: #1a0a2e;
+                padding: 12px 24px;
+                border-radius: 6px;
+                text-decoration: none;
+                font-weight: 600;
+                margin-top: 20px;
+                transition: opacity 0.2s;
+            }
 
-        .Home_card__HIlp_ strong {
-            color: #bcd7f8;
-            font-size: 18px;
-            font-weight: 600;
-        }
+            .cta-button:hover {
+                opacity: 0.9;
+            }
 
-        .Home_compactNav__N99Di {
-            display: flex;
-            gap: 16px;
-            margin: 40px 0;
-            flex-wrap: wrap;
-        }
+            .Home_compactNav__N99Di {
+                display: flex;
+                gap: 16px;
+                margin: 40px 0;
+                flex-wrap: wrap;
+            }
 
-        .Home_compactNav__N99Di a {
-            color: #60a5fa;
-            text-decoration: none;
-            font-size: 14px;
-            transition: color 0.2s;
-        }
+            .Home_compactNav__N99Di a {
+                color: #c4a9ff;
+                text-decoration: none;
+                font-size: 14px;
+                transition: color 0.2s;
+            }
 
-        .Home_compactNav__N99Di a:hover {
-            color: #a78bfa;
-        }
+            .Home_compactNav__N99Di a:hover {
+                color: #e8b4ff;
+            }
 
-        .Home_footer__wJNRn {
-            color: #4a6fa5;
-            font-size: 13px;
-            margin-top: 60px;
-            text-align: center;
-        }
-    </style>
-</head>
+            .Home_footer__wJNRn {
+                color: #8b6fa5;
+                font-size: 13px;
+                margin-top: 60px;
+                text-align: center;
+            }
 
-<body>
-    <div id="__next">
-        <div>
-            <main class="Home_surface__8x0t2" role="main">
-                <section class="Home_hero__g_og0" aria-label="Knowledge Management">
-                    <div class="Home_brand__TgXYz">
-                        <div class="Home_logo__ZEOng">AR</div>
-                        <div>
-                            <h1 id="site-title" class="Home_h1__ljsaa">Knowledge Management</h1>
-                            <div class="Home_tagline__Jw01K">IndieK Software • Tools • Systems</div>
+            @media (max-width: 768px) {
+                .Home_surface__8x0t2 {
+                    padding: 20px;
+                }
+
+                .Home_h1__ljsaa {
+                    font-size: 32px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="__next">
+            <div>
+                <main class="Home_surface__8x0t2" role="main">
+                    <section class="Home_hero__g_og0" aria-label="Knowledge Management">
+                        <h1 class="Home_h1__ljsaa">Knowledge Management</h1>
+                        <div class="Home_tagline__Jw01K">Tools • Systems • Independence</div>
+
+                        <div class="content-section">
+                            <p>Knowledge management is the practice of capturing, organizing, and leveraging information
+                                for better thinking, learning, and decision-making. This field encompasses both the
+                                theoretical foundations of information systems and the practical tools we use to extend
+                                our cognitive capabilities.</p>
+
+                            <p>My work in this area focuses on building independent, open-ended software solutions that
+                                respect user agency and promote deep engagement with ideas. Rather than closed
+                                proprietary systems, I advocate for tools that enhance human thought without
+                                constraining it.</p>
+
+                            <p>The goal is to create systems that:</p>
+                            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                                <li>Respect privacy and user autonomy</li>
+                                <li>Enable nonlinear exploration of ideas</li>
+                                <li>Facilitate connection-making across domains</li>
+                                <li>Support both individual and collaborative knowledge work</li>
+                            </ul>
+
+                            <p>For more information about IndieK Software and our tools, visit:</p>
+                            <a href="https://indiek.org" class="cta-button" target="_blank">Visit IndieK.org →</a>
                         </div>
-                    </div>
-                    <p style="max-width:60ch;color:#dceeff;opacity:0.9">Exploring tools, frameworks, and systems for
-                        effective knowledge organization, storage, and retrieval. Building independent software
-                        solutions for better thinking and learning.</p>
-                    <div class="Home_cards__6Q_LD" role="region" aria-label="Knowledge Management areas">
-                        <div class="Home_card__HIlp_">
-                            <strong>Knowledge Systems</strong>
-                            <div style="font-size:13px;color:#bcd7f8">Architecture and design of effective knowledge
-                                bases.</div>
+
+                        <div class="Home_compactNav__N99Di" aria-hidden="false">
+                            <a href="/">← Back to home</a>
                         </div>
-                        <div class="Home_card__HIlp_">
-                            <strong>IndieK Software</strong>
-                            <div style="font-size:13px;color:#bcd7f8">Independent tools for personal knowledge
-                                management.</div>
-                        </div>
-                        <div class="Home_card__HIlp_">
-                            <strong>Information Theory</strong>
-                            <div style="font-size:13px;color:#bcd7f8">Principles of information organization and
-                                retrieval.</div>
-                        </div>
-                    </div>
-                    <div class="Home_compactNav__N99Di" aria-hidden="false">
-                        <a href="/">← Back to home</a>
-                    </div>
-                    <div class="Home_footer__wJNRn">adrianradillo.org — crafted with code &amp; art</div>
-                </section>
-            </main>
+                        <div class="Home_footer__wJNRn">adrianradillo.org — Software Developer • Mathematician</div>
+                    </section>
+                </main>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 
-</html>
+    </html>

@@ -1,279 +1,233 @@
-<!DOCTYPE html>
-<html>
+<\!DOCTYPE html>
+    <html>
 
-<head>
-    <meta charSet="utf-8" data-next-head="" />
-    <meta name="viewport" content="width=device-width" data-next-head="" />
-    <title data-next-head="">Adrian Radillo — research • bio • knowledge management</title>
-    <meta name="description" content="Adrian Radillo — research, bio, knowledge management." data-next-head="" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&amp;family=Playfair+Display:wght@400;700&amp;display=swap"
-        rel="stylesheet" />
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <head>
+        <meta charSet="utf-8" data-next-head="" />
+        <meta name="viewport" content="width=device-width" data-next-head="" />
+        <title data-next-head="">Adrian Radillo — research • bio • knowledge management</title>
+        <meta name="description" content="Adrian Radillo — research, bio, knowledge management." data-next-head="" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&amp;family=Playfair+Display:wght@400;700&amp;display=swap"
+            rel="stylesheet" />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
 
-        body {
-            background: linear-gradient(135deg, #0a1428 0%, #1a2d4f 100%);
-            color: #dceeff;
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-        }
+            body {
+                background: linear-gradient(135deg, #1a0a2e 0%, #2d1a3d 100%);
+                color: #e8d5f2;
+                font-family: 'Inter', sans-serif;
+                line-height: 1.6;
+            }
 
-        .Home_surface__8x0t2 {
-            min-height: 100vh;
-            padding: 40px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .Home_hero__g_og0 {
-            padding: 40px 0;
-        }
-
-        .Home_brand__TgXYz {
-            display: flex;
-            gap: 20px;
-            align-items: flex-start;
-            margin-bottom: 40px;
-        }
-
-        .Home_logo__ZEOng {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #a78bfa 0%, #60a5fa 100%);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 800;
-            font-size: 24px;
-            flex-shrink: 0;
-        }
-
-        .Home_h1__ljsaa {
-            font-family: 'Playfair Display', serif;
-            font-size: 48px;
-            font-weight: 700;
-            margin-bottom: 8px;
-            color: #eaf6ff;
-        }
-
-        .Home_tagline__Jw01K {
-            font-size: 18px;
-            color: #8ab4f8;
-            font-weight: 300;
-        }
-
-        .Home_cards__6Q_LD {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
-            margin: 40px 0;
-        }
-
-        .Home_card__HIlp_ {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            padding: 24px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-
-        .Home_card__HIlp_:hover {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.2);
-            transform: translateY(-2px);
-        }
-
-        .Home_card__HIlp_ strong {
-            color: #bcd7f8;
-            font-size: 18px;
-            font-weight: 600;
-        }
-
-        .Home_compactNav__N99Di {
-            display: flex;
-            gap: 16px;
-            margin: 40px 0;
-            flex-wrap: wrap;
-        }
-
-        .Home_compactNav__N99Di a {
-            color: #60a5fa;
-            text-decoration: none;
-            font-size: 14px;
-            transition: color 0.2s;
-        }
-
-        .Home_compactNav__N99Di a:hover {
-            color: #a78bfa;
-        }
-
-        .Home_footer__wJNRn {
-            color: #4a6fa5;
-            font-size: 13px;
-            margin-top: 60px;
-            text-align: center;
-        }
-
-        .Home_side__3HuFA {
-            position: fixed;
-            right: 40px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        .Home_wheelWrap__DnBu3 {
-            width: 280px;
-            height: 280px;
-        }
-
-        .Home_wheel__pAvbT {
-            width: 100%;
-            height: 100%;
-            cursor: pointer;
-        }
-
-        .Home_hoverReveal__qy4b6 {
-            position: fixed;
-            right: 40px;
-            top: 20px;
-            color: #60a5fa;
-            font-size: 13px;
-            height: 20px;
-        }
-
-        .Home_label__sorqB {
-            opacity: 0;
-            transition: opacity 0.2s;
-        }
-
-        @media (max-width: 768px) {
             .Home_surface__8x0t2 {
-                padding: 20px;
+                min-height: 100vh;
+                padding: 40px;
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .Home_hero__g_og0 {
+                text-align: center;
+                padding: 40px 0;
             }
 
             .Home_h1__ljsaa {
-                font-size: 32px;
+                font-family: 'Playfair Display', serif;
+                font-size: 64px;
+                font-weight: 700;
+                margin-bottom: 20px;
+                color: #f0e8ff;
             }
 
-            .Home_cards__6Q_LD {
-                grid-template-columns: 1fr;
+            .Home_tagline__Jw01K {
+                font-size: 24px;
+                color: #c4a9ff;
+                font-weight: 300;
+                letter-spacing: 2px;
+            }
+
+            .Home_tagline__Jw01K a {
+                color: #c4a9ff;
+                text-decoration: none;
+                cursor: pointer;
+                transition: color 0.2s;
+            }
+
+            .Home_tagline__Jw01K a:hover {
+                color: #e8b4ff;
+            }
+
+            .Home_compactNav__N99Di {
+                display: flex;
+                gap: 16px;
+                margin: 40px 0;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .Home_compactNav__N99Di a {
+                color: #60a5fa;
+                text-decoration: none;
+                font-size: 14px;
+                transition: color 0.2s;
+            }
+
+            .Home_compactNav__N99Di a:hover {
+                color: #a78bfa;
+            }
+
+            .Home_footer__wJNRn {
+                color: #8b6fa5;
+                font-size: 13px;
+                margin-top: 60px;
+                text-align: center;
             }
 
             .Home_side__3HuFA {
-                position: static;
-                transform: none;
-                width: 100%;
-                margin-top: 40px;
+                margin-top: 20px;
             }
 
             .Home_wheelWrap__DnBu3 {
-                width: 200px;
-                height: 200px;
+                width: 400px;
+                height: 400px;
                 margin: 0 auto;
             }
-        }
-    </style>
-</head>
 
-<body>
-    <div id="__next">
-        <div>
-            <main class="Home_surface__8x0t2" role="main" aria-labelledby="site-title">
-                <section class="Home_hero__g_og0" aria-label="Intro">
-                    <div class="Home_brand__TgXYz">
-                        <div class="Home_logo__ZEOng">AR</div>
-                        <div>
-                            <h1 id="site-title" class="Home_h1__ljsaa">Adrian Radillo</h1>
-                            <div class="Home_tagline__Jw01K">Research • Bio • Knowledge Management
-                            </div>
+            .Home_wheel__pAvbT {
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+            }
+
+            .wheel-label {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-family: 'Playfair Display', serif;
+                font-size: 18px;
+                font-weight: 600;
+                color: #c4a9ff;
+                opacity: 0;
+                transition: opacity 0.2s;
+                pointer-events: none;
+                white-space: nowrap;
+            }
+
+            .Home_h1__ljsaa {
+                font-size: 40px;
+            }
+
+            .Home_tagline__Jw01K {
+                font-size: 18px;
+            }
+
+            .Home_wheelWrap__DnBu3 {
+                width: 250px;
+                height: 250px;
+            }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="__next">
+            <div>
+                <main class="Home_surface__8x0t2" role="main" aria-labelledby="site-title">
+                    <section class="Home_hero__g_og0" aria-label="Intro">
+                        <h1 id="site-title" class="Home_h1__ljsaa">Adrian Radillo</h1>
+                        <div class="Home_tagline__Jw01K">
+                            <a href="/research/">Research</a> • <a href="/bio/">Bio</a> • <a
+                                href="/knowledge-management/">Knowledge Management</a>
                         </div>
-                    </div>
-                    <p style="max-width:60ch;color:#dceeff;opacity:0.9">Welcome to my humble abode.</p>
-                    <div class="Home_cards__6Q_LD" role="navigation" aria-label="Quick links"><a
-                            class="Home_card__HIlp_" href="/research/" title="Research"><strong>Research</strong>
-                            <div style="font-size:13px;color:#bcd7f8">Neural Computation, Psychology, Metaphysics.</div>
-                        </a><a class="Home_card__HIlp_" href="/bio/" title="Bio"><strong>Bio</strong>
-                            <div style="font-size:13px;color:#bcd7f8">CV.</div>
-                        </a><a class="Home_card__HIlp_" href="/knowledge-management/"
-                            title="Knowledge Management"><strong>Knowledge Management</strong>
-                            <div style="font-size:13px;color:#bcd7f8">IndieK Software.</div>
-                        </a></div>
-                    </a>
-        </div>
-        <div class="Home_compactNav__N99Di" aria-hidden="false">
-            <a href="/research/">Research</a>
-            <a href="/bio/">Bio</a>
-            <a href="/knowledge-management/">Knowledge Management</a>
-        </div>
-        <div class="Home_footer__wJNRn">adrianradillo.org — crafted with code &amp; art</div>
-        </section>
-        <aside class="Home_side__3HuFA" aria-label="Interactive wheel">
-            <div class="Home_wheelWrap__DnBu3" role="application" aria-hidden="false"><svg id="wheel-svg"
-                    class="Home_wheel__pAvbT" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"
-                    aria-label="Navigation wheel" role="img">
-                    <defs>
-                        <radialGradient id="g1" cx="50%" cy="40%" r="60%">
-                            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.05"></stop>
-                            <stop offset="100%" stop-color="#000000" stop-opacity="0.02"></stop>
-                        </radialGradient>
-                        <linearGradient id="g2" x1="0" x2="1">
-                            <stop offset="0%" stop-color="#a78bfa" stop-opacity=".85"></stop>
-                            <stop offset="1" stop-color="#60a5fa" stop-opacity=".8"></stop>
-                        </linearGradient>
-                        <linearGradient id="dragon-tint" x1="0" x2="0" y1="0" y2="1">
-                            <stop offset="0%" stop-color="rgba(0,0,0,0.06)"></stop>
-                            <stop offset="100%" stop-color="rgba(0,0,0,0.12)"></stop>
-                        </linearGradient>
-                    </defs>
-                    <circle cx="200" cy="200" r="190" fill="url(#g1)"></circle>
-                    <g transform="translate(0,0)" aria-hidden="true">
-                        <defs>
-                            <clipPath id="wheel-clip">
-                                <circle cx="200" cy="200" r="190"></circle>
-                            </clipPath>
-                        </defs>
-                        <image href="/media/images/dragon-wheel.svg" x="20" y="20" width="360" height="360"
-                            preserveAspectRatio="xMidYMid slice" clip-path="url(#wheel-clip)" opacity="0.92">
-                        </image>
-                        <circle cx="200" cy="200" r="190" fill="url(#dragon-tint)" clip-path="url(#wheel-clip)">
-                        </circle>
-                    </g>
-                    <g id="sectors" transform="translate(0,0)">
-                        <path data-link="/research/" class="sector" d="M200,200 L200,10 A190,190 0 0,1 364.54,295 z"
-                            fill="url(#g2)" opacity="0.14">
-                        </path>
-                        <path data-link="/bio/" class="sector" d="M200,200 L364.54,295 A190,190 0 0,1 35.46,295 z"
-                            fill="url(#g2)" opacity="0.11">
-                        </path>
-                        <path data-link="/knowledge-management/" class="sector"
-                            d="M200,200 L35.46,295 A190,190 0 0,1 200,10 z" fill="url(#g2)" opacity="0.11">
-                        </path>
-                    </g>
-                    <g transform="translate(0,0)">
-                        <circle cx="200" cy="200" r="110" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.03)"
-                            stroke-width="1"></circle><text x="200" y="200" text-anchor="middle"
-                            alignment-baseline="central" font-family="Playfair Display, serif" font-size="20"
-                            fill="#eaf6ff">Enter</text>
-                    </g>
-                </svg></div>
-            <div class="Home_hoverReveal__qy4b6" aria-hidden="false">
-                <div class="Home_label__sorqB " aria-live="polite"></div>
-            </div>
-        </aside>
-        </main>
-    </div>
-    </div>
-</body>
 
-</html>
+                    </section>
+                    <aside class="Home_side__3HuFA" aria-label="Interactive wheel">
+                        <div class="Home_wheelWrap__DnBu3" role="application">
+                            <div class="wheel-label" id="wheel-label"></div><svg id="wheel-svg"
+                                class="Home_wheel__pAvbT" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"
+                                aria-label="Navigation wheel" role="img">
+                                <defs>
+                                    <radialGradient id="g1" cx="50%" cy="40%" r="60%">
+                                        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.05"></stop>
+                                        <stop offset="100%" stop-color="#000000" stop-opacity="0.02"></stop>
+                                    </radialGradient>
+                                    <linearGradient id="g2" x1="0" x2="1">
+                                        <stop offset="0%" stop-color="#c4a9ff" stop-opacity=".85"></stop>
+                                        <stop offset="1" stop-color="#d480ff" stop-opacity=".8"></stop>
+                                    </linearGradient>
+                                    <linearGradient id="dragon-tint" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="0%" stop-color="rgba(0,0,0,0.06)"></stop>
+                                        <stop offset="100%" stop-color="rgba(0,0,0,0.12)"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="200" cy="200" r="190" fill="url(#g1)"></circle>
+                                <g transform="translate(0,0)" aria-hidden="true">
+                                    <defs>
+                                        <clipPath id="wheel-clip">
+                                            <circle cx="200" cy="200" r="190"></circle>
+                                        </clipPath>
+                                    </defs>
+                                    <image href="/media/images/dragon-wheel.svg" x="20" y="20" width="360" height="360"
+                                        preserveAspectRatio="xMidYMid slice" clip-path="url(#wheel-clip)"
+                                        opacity="0.92"></image>
+                                    <circle cx="200" cy="200" r="190" fill="url(#dragon-tint)"
+                                        clip-path="url(#wheel-clip)"></circle>
+                                </g>
+                                <g id="sectors" transform="translate(0,0)">
+                                    <path data-link="/research/" class="sector"
+                                        d="M200,200 L200,10 A190,190 0 0,1 364.54,295 z" fill="url(#g2)" opacity="0.14"
+                                        style="cursor:pointer;"></path>
+                                    <path data-link="/bio/" class="sector"
+                                        d="M200,200 L364.54,295 A190,190 0 0,1 35.46,295 z" fill="url(#g2)"
+                                        opacity="0.11" style="cursor:pointer;"></path>
+                                    <path data-link="/knowledge-management/" class="sector"
+                                        d="M200,200 L35.46,295 A190,190 0 0,1 200,10 z" fill="url(#g2)" opacity="0.11"
+                                        style="cursor:pointer;"></path>
+                                </g>
+                                <g transform="translate(0,0)">
+                                    <circle cx="200" cy="200" r="110" fill="rgba(255,255,255,0.02)"
+                                        stroke="rgba(255,255,255,0.03)" stroke-width="1"></circle>
+                                </g>
+                            </svg>
+                        </div>
+                    </aside>
+                    <div class="Home_footer__wJNRn">adrianradillo.org — Software Developer • Mathematician</div>
+                </main>
+            </div>
+        </div>
+        <script>
+            const sectors = [
+                { element: document.querySelector('[data-link="/research/"]'), label: 'Research' },
+                { element: document.querySelector('[data-link="/bio/"]'), label: 'Bio' },
+                { element: document.querySelector('[data-link="/knowledge-management/"]'), label: 'Knowledge Management' }
+            ];
+            const wheelLabel = document.getElementById('wheel-label');
+            sectors.forEach(sector => {
+                if (sector.element) {
+                    sector.element.addEventListener('mouseenter', () => {
+                        wheelLabel.textContent = sector.label;
+                        wheelLabel.style.opacity = '1';
+                    });
+                    sector.element.addEventListener('mouseleave', () => {
+                        wheelLabel.style.opacity = '0';
+                    });
+                    sector.element.addEventListener('click', () => {
+                        const link = sector.element.getAttribute('data-link');
+                        if (link) window.location.href = link;
+                    });
+                }
+            });
+        </script>
+    </body>
+
+    </html>
