@@ -18,7 +18,7 @@
         }
 
         body {
-            background: linear-gradient(135deg, #1a0a2e 0%, #2d1a3d 100%);
+            background: linear-gradient(135deg, #120914 0%, #090b13 100%);
             color: #e8d5f2;
             font-family: 'Inter', sans-serif;
             line-height: 1.6;
@@ -100,6 +100,7 @@
             width: 400px;
             height: 400px;
             margin: 0 auto;
+            position: relative;
         }
 
         .Home_wheel__pAvbT {
@@ -108,19 +109,45 @@
             cursor: pointer;
         }
 
+        .wheel-labels {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+        }
+
         .wheel-label {
             position: absolute;
-            top: 50%;
-            left: 50%;
             transform: translate(-50%, -50%);
             font-family: 'Playfair Display', serif;
-            font-size: 18px;
-            font-weight: 600;
-            color: #c4a9ff;
+            font-weight: 700;
+            letter-spacing: 0.4px;
+            color: #ffffff;
+            text-shadow: 0 1px 10px rgba(0, 0, 0, 0.65);
             opacity: 0;
-            transition: opacity 0.2s;
-            pointer-events: none;
+            transition: opacity 0.2s ease, transform 0.2s ease;
             white-space: nowrap;
+            pointer-events: none;
+            font-size: clamp(16px, 2.4vmin, 24px);
+        }
+
+        .wheel-label.visible {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1.02);
+        }
+
+        .wheel-label.research {
+            right: 6%;
+            top: 24%;
+        }
+
+        .wheel-label.bio {
+            left: 50%;
+            top: 80%;
+        }
+
+        .wheel-label.knowledge {
+            left: 6%;
+            top: 24%;
         }
 
         .Home_h1__ljsaa {
@@ -135,6 +162,19 @@
             width: 250px;
             height: 250px;
         }
+
+        .wheel-disabled .Home_wheel__pAvbT {
+            pointer-events: none;
+        }
+
+        @media (max-width: 560px) {
+            .wheel-labels {
+                display: none;
+            }
+
+            .Home_wheel__pAvbT {
+                cursor: default;
+            }
         }
     </style>
 </head>
@@ -153,9 +193,14 @@
                 </section>
                 <aside class="Home_side__3HuFA" aria-label="Interactive wheel">
                     <div class="Home_wheelWrap__DnBu3" role="application">
-                        <div class="wheel-label" id="wheel-label"></div><svg id="wheel-svg" class="Home_wheel__pAvbT"
-                            viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-label="Navigation wheel"
-                            role="img">
+                        <div class="wheel-labels" aria-hidden="true">
+                            <div class="wheel-label research" data-sector="Research">Research</div>
+                            <div class="wheel-label bio" data-sector="Music">Music</div>
+                            <div class="wheel-label knowledge" data-sector="Knowledge Management">Knowledge Management
+                            </div>
+                        </div>
+                        <svg id="wheel-svg" class="Home_wheel__pAvbT" viewBox="0 0 400 400"
+                            xmlns="http://www.w3.org/2000/svg" aria-label="Navigation wheel" role="img">
                             <defs>
                                 <radialGradient id="g1" cx="50%" cy="40%" r="60%">
                                     <stop offset="0%" stop-color="#ffffff" stop-opacity="0.05"></stop>
@@ -208,25 +253,38 @@
     <script>
         const sectors = [
             { element: document.querySelector('[data-link="/research/"]'), label: 'Research' },
-            { element: document.querySelector('[data-link="/bio/"]'), label: 'Bio' },
+            { element: document.querySelector('[data-link="/music/"]'), label: 'Music' },
             { element: document.querySelector('[data-link="/knowledge-management/"]'), label: 'Knowledge Management' }
         ];
-        const wheelLabel = document.getElementById('wheel-label');
-        sectors.forEach(sector => {
-            if (sector.element) {
+
+        const wheelWrap = document.querySelector('.Home_wheelWrap__DnBu3');
+        const labelMap = {
+            Research: document.querySelector('.wheel-label.research'),
+            Music: document.querySelector('.wheel-label.bio'),
+            'Knowledge Management': document.querySelector('.wheel-label.knowledge')
+        };
+
+        const isMobile = window.matchMedia('(max-width: 560px)').matches;
+
+        if (isMobile) {
+            wheelWrap.classList.add('wheel-disabled');
+        } else {
+            sectors.forEach(sector => {
+                if (!sector.element) return;
+                const label = labelMap[sector.label];
                 sector.element.addEventListener('mouseenter', () => {
-                    wheelLabel.textContent = sector.label;
-                    wheelLabel.style.opacity = '1';
+                    Object.values(labelMap).forEach(el => el.classList.remove('visible'));
+                    if (label) label.classList.add('visible');
                 });
                 sector.element.addEventListener('mouseleave', () => {
-                    wheelLabel.style.opacity = '0';
+                    if (label) label.classList.remove('visible');
                 });
                 sector.element.addEventListener('click', () => {
                     const link = sector.element.getAttribute('data-link');
                     if (link) window.location.href = link;
                 });
-            }
-        });
+            });
+        }
     </script>
 </body>
 
