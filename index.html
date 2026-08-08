@@ -195,7 +195,7 @@
                     <div class="Home_wheelWrap__DnBu3" role="application">
                         <div class="wheel-labels" aria-hidden="true">
                             <div class="wheel-label research" data-sector="Research">Research</div>
-                            <div class="wheel-label bio" data-sector="Music">Music</div>
+                            <div class="wheel-label bio" data-sector="Bio">Bio</div>
                             <div class="wheel-label knowledge" data-sector="Knowledge Management">Knowledge Management
                             </div>
                         </div>
@@ -253,14 +253,14 @@
     <script>
         const sectors = [
             { element: document.querySelector('[data-link="/research/"]'), label: 'Research' },
-            { element: document.querySelector('[data-link="/music/"]'), label: 'Music' },
+            { element: document.querySelector('[data-link="/bio/"]'), label: 'Bio' },
             { element: document.querySelector('[data-link="/knowledge-management/"]'), label: 'Knowledge Management' }
         ];
 
         const wheelWrap = document.querySelector('.Home_wheelWrap__DnBu3');
         const labelMap = {
             Research: document.querySelector('.wheel-label.research'),
-            Music: document.querySelector('.wheel-label.bio'),
+            Bio: document.querySelector('.wheel-label.bio'),
             'Knowledge Management': document.querySelector('.wheel-label.knowledge')
         };
 
