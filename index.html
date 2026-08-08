@@ -7,22 +7,183 @@
     <title data-next-head="">Adrian Radillo — research • bio • knowledge management</title>
     <meta name="description" content="Adrian Radillo — research, bio, knowledge management." data-next-head="" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-    <link rel="preload" href="/_next/static/css/0ed5692fc9db7f1e.css" as="style" />
-    <link rel="preload" href="/_next/static/css/345f87d00b8cb13f.css" as="style" />
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&amp;family=Playfair+Display:wght@400;700&amp;display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="/_next/static/css/0ed5692fc9db7f1e.css" data-n-g="" />
-    <link rel="stylesheet" href="/_next/static/css/345f87d00b8cb13f.css" data-n-p="" /><noscript
-        data-n-css=""></noscript>
-    <script defer="" noModule="" src="/_next/static/chunks/polyfills-42372ed130431b0a.js"></script>
-    <script src="/_next/static/chunks/webpack-8cac0b4b405cede1.js" defer=""></script>
-    <script src="/_next/static/chunks/framework-292291387d6b2e39.js" defer=""></script>
-    <script src="/_next/static/chunks/main-afe835425a058675.js" defer=""></script>
-    <script src="/_next/static/chunks/pages/_app-d5a1052dbd32df1a.js" defer=""></script>
-    <script src="/_next/static/chunks/pages/index-ba81b492c1beb38c.js" defer=""></script>
-    <script src="/_next/static/0mIjCajbYuGEsuEUivs9W/_buildManifest.js" defer=""></script>
-    <script src="/_next/static/0mIjCajbYuGEsuEUivs9W/_ssgManifest.js" defer=""></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a1428 0%, #1a2d4f 100%);
+            color: #dceeff;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+
+        .Home_surface__8x0t2 {
+            min-height: 100vh;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .Home_hero__g_og0 {
+            padding: 40px 0;
+        }
+
+        .Home_brand__TgXYz {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+
+        .Home_logo__ZEOng {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #a78bfa 0%, #60a5fa 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .Home_h1__ljsaa {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #eaf6ff;
+        }
+
+        .Home_tagline__Jw01K {
+            font-size: 18px;
+            color: #8ab4f8;
+            font-weight: 300;
+        }
+
+        .Home_cards__6Q_LD {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin: 40px 0;
+        }
+
+        .Home_card__HIlp_ {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 24px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .Home_card__HIlp_:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .Home_card__HIlp_ strong {
+            color: #bcd7f8;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .Home_compactNav__N99Di {
+            display: flex;
+            gap: 16px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .Home_compactNav__N99Di a {
+            color: #60a5fa;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .Home_compactNav__N99Di a:hover {
+            color: #a78bfa;
+        }
+
+        .Home_footer__wJNRn {
+            color: #4a6fa5;
+            font-size: 13px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .Home_side__3HuFA {
+            position: fixed;
+            right: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .Home_wheelWrap__DnBu3 {
+            width: 280px;
+            height: 280px;
+        }
+
+        .Home_wheel__pAvbT {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .Home_hoverReveal__qy4b6 {
+            position: fixed;
+            right: 40px;
+            top: 20px;
+            color: #60a5fa;
+            font-size: 13px;
+            height: 20px;
+        }
+
+        .Home_label__sorqB {
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        @media (max-width: 768px) {
+            .Home_surface__8x0t2 {
+                padding: 20px;
+            }
+
+            .Home_h1__ljsaa {
+                font-size: 32px;
+            }
+
+            .Home_cards__6Q_LD {
+                grid-template-columns: 1fr;
+            }
+
+            .Home_side__3HuFA {
+                position: static;
+                transform: none;
+                width: 100%;
+                margin-top: 40px;
+            }
+
+            .Home_wheelWrap__DnBu3 {
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -89,14 +250,14 @@
                         </circle>
                     </g>
                     <g id="sectors" transform="translate(0,0)">
-                        <path data-link="/research/" class="sector" d="M200,200 L200,10 A190,190 0 0,1 352.95,86.22 z"
+                        <path data-link="/research/" class="sector" d="M200,200 L200,10 A190,190 0 0,1 364.54,295 z"
                             fill="url(#g2)" opacity="0.14">
                         </path>
-                        <path data-link="/bio/" class="sector" d="M200,200 L47.05,86.22 A190,190 0 0,1 200,10 z"
+                        <path data-link="/bio/" class="sector" d="M200,200 L364.54,295 A190,190 0 0,1 35.46,295 z"
                             fill="url(#g2)" opacity="0.11">
                         </path>
                         <path data-link="/knowledge-management/" class="sector"
-                            d="M200,200 L47.05,86.22 A190,190 0 0,1 200,10 z" fill="url(#g2)" opacity="0.11">
+                            d="M200,200 L35.46,295 A190,190 0 0,1 200,10 z" fill="url(#g2)" opacity="0.11">
                         </path>
                     </g>
                     <g transform="translate(0,0)">
@@ -113,8 +274,6 @@
         </main>
     </div>
     </div>
-    <script id="__NEXT_DATA__"
-        type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"0mIjCajbYuGEsuEUivs9W","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script>
 </body>
 
 </html>

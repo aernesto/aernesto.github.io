@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charSet="utf-8" data-next-head="" />
+    <meta name="viewport" content="width=device-width" data-next-head="" />
+    <title data-next-head="">Bio — Adrian Radillo</title>
+    <meta name="description" content="Adrian Radillo's CV, experience, and background" data-next-head="" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&amp;family=Playfair+Display:wght@400;700&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a1428 0%, #1a2d4f 100%);
+            color: #dceeff;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+
+        .Home_surface__8x0t2 {
+            min-height: 100vh;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .Home_hero__g_og0 {
+            padding: 40px 0;
+        }
+
+        .Home_brand__TgXYz {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+
+        .Home_logo__ZEOng {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #a78bfa 0%, #60a5fa 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .Home_h1__ljsaa {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #eaf6ff;
+        }
+
+        .Home_tagline__Jw01K {
+            font-size: 18px;
+            color: #8ab4f8;
+            font-weight: 300;
+        }
+
+        .Home_cards__6Q_LD {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin: 40px 0;
+        }
+
+        .Home_card__HIlp_ {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 24px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .Home_card__HIlp_:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .Home_card__HIlp_ strong {
+            color: #bcd7f8;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .Home_compactNav__N99Di {
+            display: flex;
+            gap: 16px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .Home_compactNav__N99Di a {
+            color: #60a5fa;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .Home_compactNav__N99Di a:hover {
+            color: #a78bfa;
+        }
+
+        .Home_footer__wJNRn {
+            color: #4a6fa5;
+            font-size: 13px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .pdf-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #a78bfa 0%, #60a5fa 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 30px;
+            transition: opacity 0.2s ease;
+        }
+
+        .pdf-button:hover {
+            opacity: 0.9;
+        }
+
+        .bio-section {
+            margin-bottom: 30px;
+        }
+
+        .bio-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #eaf6ff;
+        }
+
+        .bio-section h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 12px;
+            margin-bottom: 8px;
+            color: #d4e4ff;
+        }
+
+        .job-entry {
+            margin-bottom: 15px;
+        }
+
+        .job-title {
+            font-weight: 600;
+            color: #bcd7f8;
+        }
+
+        .job-meta {
+            font-size: 13px;
+            color: #8ab4f8;
+            margin-bottom: 5px;
+        }
+
+        .job-description {
+            color: #dceeff;
+            opacity: 0.9;
+            margin-left: 10px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .job-description ul {
+            margin: 8px 0;
+            padding-left: 20px;
+        }
+
+        .job-description li {
+            margin-bottom: 5px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .skill-category {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 12px;
+            border-radius: 6px;
+            border-left: 3px solid #a78bfa;
+        }
+
+        .skill-category strong {
+            color: #bcd7f8;
+        }
+
+        .skill-category p {
+            margin: 5px 0 0 0;
+            color: #dceeff;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .bio-section h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+    <script defer="" noModule="" src="/_next/static/chunks/polyfills-42372ed130431b0a.js"></script>
+    <script src="/_next/static/chunks/webpack-8cac0b4b405cede1.js" defer=""></script>
+    <script src="/_next/static/chunks/framework-292291387d6b2e39.js" defer=""></script>
+    <script src="/_next/static/chunks/main-afe835425a058675.js" defer=""></script>
+    <script src="/_next/static/chunks/pages/_app-d5a1052dbd32df1a.js" defer=""></script>
+    <script src="/_next/static/chunks/pages/bio-3ca3907046c9e95b.js" defer=""></script>
+    <script src="/_next/static/0mIjCajbYuGEsuEUivs9W/_buildManifest.js" defer=""></script>
+    <script src="/_next/static/0mIjCajbYuGEsuEUivs9W/_ssgManifest.js" defer=""></script>
+</head>
+
+<body>
+    <div id="__next">
+        <div>
+            <main class="Home_surface__8x0t2" role="main">
+                <section class="Home_hero__g_og0" aria-label="Bio">
+                    <div class="Home_brand__TgXYz">
+                        <div class="Home_logo__ZEOng">AR</div>
+                        <div>
+                            <h1 id="site-title" class="Home_h1__ljsaa">Bio</h1>
+                            <div class="Home_tagline__Jw01K">CV • Experience • Background</div>
+                        </div>
+                    </div>
+
+                    <a href="/media/pdfs/Resume_Radillo_Aug2026.pdf" class="pdf-button" download>
+                        ⬇ Download as PDF
+                    </a>
+
+                    <div class="bio-section">
+                        <h2>Adrian E. Radillo, Ph.D.</h2>
+                        <p style="color:#8ab4f8;font-size:14px;margin-bottom:15px;">
+                            +1(469) 662-7982 • Philadelphia, PA<br>
+                            adrian.radillo@protonmail.com • LinkedIn • GitHub • www.adrianradillo.org
+                        </p>
+                        <p style="max-width:65ch;color:#dceeff;opacity:0.9;line-height:1.6;">
+                            Senior Data Scientist and Full-Stack Statistical Modeler with over 5 years of enterprise
+                            experience deploying mathematical models into production environments and architecting
+                            end-to-end applications. Expertise spans rigorous Bayesian statistics, predictive modeling,
+                            and full-stack web architecture (Python, FastAPI, NextJS, Linux VPS).<br><br>
+                            Proven ability to lead cross-functional offshore engineering teams and drive complex system
+                            modeling. Seeking a Senior Data Scientist or Backend Engineering role within enterprise
+                            infrastructure to optimize system reliability, network data modeling, and performance.
+                        </p>
+                    </div>
+
+                    <div class="bio-section">
+                        <h2>Technical Skills</h2>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <strong>Languages:</strong>
+                                <p>Python (Advanced), JavaScript/TypeScript, SQL, R.</p>
+                            </div>
+                            <div class="skill-category">
+                                <strong>Backend &amp; Infrastructure:</strong>
+                                <p>Linux Server Administration, Apache Service Management, Virtual Private Servers
+                                    (VPS), FastAPI, Git, CI/CD pipelines.</p>
+                            </div>
+                            <div class="skill-category">
+                                <strong>Frontend:</strong>
+                                <p>NextJS, React, Modern Web App Architecture.</p>
+                            </div>
+                            <div class="skill-category">
+                                <strong>Data Science &amp; Mathematics:</strong>
+                                <p>Bayesian Decision Theory, Statistical Inference, Probabilistic Modeling, Timeseries
+                                    Analysis, Temporal Modeling.</p>
+                            </div>
+                            <div class="skill-category">
+                                <strong>Leadership:</strong>
+                                <p>Agile Project Management, Offshore Team Leadership, Cross-Functional Technical
+                                    Direction.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bio-section">
+                        <h2>Professional Experience</h2>
+
+                        <div class="job-entry">
+                            <div class="job-title">Independent Software Developer &amp; Researcher</div>
+                            <div class="job-meta">Self-Employed • Philadelphia, PA • 2026 - Present</div>
+                            <div class="job-description">
+                                <ul>
+                                    <li>Architected and deploying a full-stack Knowledge Management and Debating web
+                                        application serving live traffic via Apache on a Linux VPS.</li>
+                                    <li>Engineered the backend using FastAPI and Python, ensuring low-latency data
+                                        retrieval and robust API integration.</li>
+                                    <li>Developed a highly responsive frontend using NextJS and modern JavaScript
+                                        frameworks.</li>
+                                    <li>Managed end-to-end infrastructure, including server provisioning, multi-domain
+                                        management, network security, and database architecture.</li>
+                                    <li>Conducted continuous independent research into mathematical psychology,
+                                        metaphysics, and complex systems modeling. <a
+                                            href="https://doi.org/10.5281/zenodo.19058514"
+                                            style="color:#60a5fa;">https://doi.org/10.5281/zenodo.19058514</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="job-entry">
+                            <div class="job-title">AI Data Scientist</div>
+                            <div class="job-meta">Chubb (insurance) • Philadelphia, PA • 2020 - 2025</div>
+                            <div class="job-description">
+                                <ul>
+                                    <li>Developed the Python ML backend of a timeseries anomaly detection web app, now
+                                        being used across 3 regions for Business analytics and financial risk
+                                        management.</li>
+                                    <li>Designed and developed a Root-Cause Analysis module for KPI timeseries anomalies
+                                        relying on XGBoost predictive modeling and SHAPley values.</li>
+                                    <li>2+ years of heavy cross-functional communication with UI, Business stakeholders,
+                                        and IT teams to deliver two high-impact analytics products into production,
+                                        while securing Business and leadership buy-in. The total company budget for both
+                                        projects was around USD 30M.</li>
+                                    <li>Developed and maintained a Django web app for human labeling of webtext. The
+                                        collected labels were used to fine-tune a Bert model used in production. The
+                                        whole system is saving the company hundreds of hours of underwriting time per
+                                        year.</li>
+                                    <li>Setup the job and tracking infrastructure on Databricks and MLFLow to run
+                                        experiments for an Operations Research project. Setup the CI pipeline for IT
+                                        handoff.</li>
+                                    <li>4+ years of end-to-end predictive model building for the insurance industry
+                                        (GLMs, XGBoost).</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="job-entry">
+                            <div class="job-title">Mathematics Educator</div>
+                            <div class="job-meta">French Agricultural High School • France • Late 2025 - Early 2026
+                            </div>
+                            <div class="job-description">
+                                <ul>
+                                    <li>Instructed secondary students in foundational and advanced mathematics during a
+                                        6-month, purpose-driven teaching engagement.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="job-entry">
+                            <div class="job-title">Postdoctoral Researcher</div>
+                            <div class="job-meta">University of Pennsylvania • Philadelphia, PA • 2018 - 2020</div>
+                            <div class="job-description">
+                                <ul>
+                                    <li>Designed and ran a human Psychophysics experiment investigating temporal
+                                        information filtering in perceptual decision making.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bio-section">
+                        <h2>Education</h2>
+                        <div class="job-entry">
+                            <div class="job-title">Ph.D. Mathematics</div>
+                            <div class="job-meta">University of Houston • 2014 - 2018</div>
+                            <div class="job-description">
+                                Dissertation: Optimal decision making models in changing environments
+                            </div>
+                        </div>
+                        <div class="job-entry">
+                            <div class="job-title">B.Sc. Mathematics</div>
+                            <div class="job-meta">University of Warwick • 2011 - 2014</div>
+                        </div>
+                        <div class="job-entry">
+                            <div class="job-title">M.A. Clinical Psychology</div>
+                            <div class="job-meta">Ecole de Psychologues Practiciens • 2004 - 2009</div>
+                        </div>
+                    </div>
+
+                    <div class="bio-section">
+                        <h2>Selected Publications</h2>
+                        <div style="color:#dceeff;opacity:0.9;font-size:14px;line-height:1.8;">
+                            <p>• Adrian E. Radillo, Alan Veliz-Cuba, Krešimir Josić, Zachary P. Kilpatrick; Evidence
+                                Accumulation and Change Rate Inference in Dynamic Environments. <em>Neural Comput</em>
+                                2017; 29 (6): 1561–1610. <a href="https://doi.org/10.1162/NECO_a_00957"
+                                    style="color:#60a5fa;">doi: https://doi.org/10.1162/NECO_a_00957</a></p>
+
+                            <p>• Adrian E. Radillo, Alan Veliz-Cuba, Krešimir Josić, and Zachary P. Kilpatrick.
+                                Performance of normative and approximate evidence accumulation on the dynamic clicks
+                                task. <em>Neurons, Behavior, Data analysis, and Theory</em>, 2, September 2019. <a
+                                    href="https://doi.org/10.48550/arXiv.1902.01535" style="color:#60a5fa;">doi:
+                                    https://doi.org/10.48550/arXiv.1902.01535</a></p>
+
+                            <p>• Radillo, A. (2009). L'expérimentation de l'utilisation des jeux vidéo en remédiation
+                                cognitive. <em>Enfances &amp; Psy</em>, 44(3), 174-179. <a
+                                    href="https://doi.org/10.3917/ep.044.0174"
+                                    style="color:#60a5fa;">https://doi.org/10.3917/ep.044.0174</a></p>
+
+                            <p>• Radillo, A., &amp; Virole, B. (2010). <em>Cyberpsychologie: Remédiation des
+                                    apprentissages, pratiques thérapeutiques, analyse des comportements</em>. Dunod.</p>
+                        </div>
+                    </div>
+
+                    <div class="Home_compactNav__N99Di" aria-hidden="false">
+                        <a href="/">← Back to home</a>
+                    </div>
+                    <div class="Home_footer__wJNRn">adrianradillo.org — crafted with code &amp; art</div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
