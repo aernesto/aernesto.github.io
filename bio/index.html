@@ -17,6 +17,46 @@
             box-sizing: border-box;
         }
 
+        .content-section {
+            max-width: 65ch;
+            color: #dceeff;
+            opacity: 0.95;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .content-section p {
+            margin-bottom: 20px;
+        }
+
+        .content-section a {
+            color: #c4a9ff;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .content-section a:hover {
+            color: #e8b4ff;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 14px 30px rgba(79, 70, 229, 0.22);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 18px 35px rgba(79, 70, 229, 0.28);
+        }
+
         body {
             background: linear-gradient(135deg, #120914 0%, #090b13 100%);
             color: #e8d5f2;
@@ -141,7 +181,7 @@
             font-size: 24px;
             font-weight: 700;
             margin-bottom: 15px;
-            color: #eaf6ff;
+            color: #d9c4ff;
         }
 
         .bio-section h3 {
@@ -405,9 +445,11 @@
                                     apprentissages, pratiques thérapeutiques, analyse des comportements</em>. Dunod.</p>
                         </div>
                     </div>
-                    <a href="/media/pdfs/Resume_Radillo_Aug2026.pdf" class="pdf-button" download>
-                        ⬇ Download as PDF
-                    </a>
+                    <div class="content-section">
+                        <a href="/media/pdfs/Resume_Radillo_Aug2026.pdf" class="cta-button" download>
+                            ⬇ Download Resume as PDF
+                        </a>
+                    </div>
                     <div class="Home_compactNav__N99Di" aria-hidden="false">
                         <a href="/">← Back to home</a>
                     </div>
